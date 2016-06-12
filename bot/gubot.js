@@ -44,7 +44,7 @@ GuBot.prototype._loadBotUser = function () {
 	})[0];
 
 	if(!this['user']) {
-		console.log('unable to find my name, ba byeeeee......')
+		//console.log('unable to find my name, ba byeeeee......')
 		process.exit(1);
 	}
 };
@@ -63,7 +63,7 @@ GuBot.prototype._onMessage = function(message){
 				self._reply(msg);
 			});
     	} else {
-    		console.log('my brain is empty :(');
+    		//console.log('my brain is empty :(');
     		process.exit(1);
     	}
     }

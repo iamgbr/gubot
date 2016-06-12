@@ -32,7 +32,7 @@ Forecast.prototype.solve = function(msg, response, dfd, userData) {
 		if(err) {
 			response.setMsg("We've got a problem to talk to forecast service...");
 		} else {
-			console.log(forecastSpeech);
+			//console.log(forecastSpeech);
 			response.setMsg(forecastSpeech.getForecastSpeech(weather));
 		}
 		dfd.resolve(response);

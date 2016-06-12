@@ -13,11 +13,11 @@ var THRESHOLD_SCORE = 0.25;
 
 var DecisionMaker = function Constructor(params) {
 	this.initRules();
-	console.log('Created : DecisionMaker');
+	//console.log('Created : DecisionMaker');
 };
 
 DecisionMaker.prototype.initRules = function() {
-	console.log('Initializing rules');
+	//console.log('Initializing rules');
 	this.ruleList = [];
 	this.ruleList.push(new CheckVersion());
 	this.ruleList.push(new Forecast());

@@ -27,12 +27,12 @@ CheckVersion.prototype.solve = function(msg, response, dfd, userData) {
 	  if (!error && msg.statusCode == 200) {
 	  	var jsonObj = JSON.parse(body);
 	  	var translated = checkVersionText.getCheckVer(jsonObj.build);
-	  	console.log("Reply : "+translated);
+	  	//console.log("Reply : "+translated);
 	  	response.setMsg(translated);
 	  	dfd.resolve(response);
 	  }
 	  else {
-	    console.log("Error "+msg.statusCode)
+	    //console.log("Error "+msg.statusCode)
 	  }
 	});
 };
