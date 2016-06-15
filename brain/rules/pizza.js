@@ -20,4 +20,4 @@ Pizza.prototype.solve = function(msg, response, dfd, userData) {
 	dfd.resolve(response);
 };
 
-module.exports = Forecast;
+module.exports = Pizza;
