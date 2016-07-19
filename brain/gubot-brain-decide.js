@@ -4,6 +4,7 @@ var CheckVersion = require('./rules/checkVer');
 var Forecast = require('./rules/forecast');
 var AwesomeTranslator = require('./rules/translator');
 var Pizza = require('./rules/pizza');
+var BodyStep = require('./rules/bodystep');
 
 // 3rd party APIs
 var Similarity = require('string-score');
@@ -25,6 +26,7 @@ DecisionMaker.prototype.initRules = function() {
 	this.ruleList.push(new HelloRule());
 	this.ruleList.push(new AwesomeTranslator());
 	this.ruleList.push(new Pizza());
+	this.ruleList.push(new BodyStep());
 };
 
 DecisionMaker.prototype.mismatch = function(msg, response, dfd){
